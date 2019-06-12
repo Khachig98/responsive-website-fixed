@@ -1,0 +1,148 @@
+html{
+	 height: 100%;
+}
+
+body {
+	height: 100%;
+  	margin: 0px;
+  	background: grey;
+}
+
+.container__header{
+	text-align: center;
+}
+
+.container__header__menu{
+	display: none;
+}
+
+.container__header__checkbox{
+	display: none;
+}
+.container__header__image{
+	width: 7em;
+}
+
+.container__links{
+	margin-top: 0.5em;
+}
+
+.container__links__a{
+	text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    padding: 0 18px;
+    text-align: center;
+}
+
+.container__definition{
+	text-align: center;
+    margin-top: 4em;
+}
+
+.container__definition__paragraph{
+	font-family: cursive;
+    font-size: 1.2em;
+}
+
+.container__definition__button{
+	padding: 0.5em 1.5em;
+    margin-top: 1em;
+    background-color: cadetblue;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+.container__bottom{
+	display: inline-flex;
+	margin-top: 4em;
+	width: 100%;
+}
+
+.container__left,
+.container__center,
+.container__right{
+	width: 35.5%;
+	padding: 0px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container__left__title,
+.container__center__title ,
+.container__right__title{
+	color: black;
+}
+
+.container__left__body,
+.container__center__body ,
+.container__right__body{
+	color: white;
+}
+
+@media all and (max-width: 786px){
+	.container__header__image{
+		width: 7em;
+}
+	.container__links__a{
+  	  padding: 0 15px;
+}
+}
+
+@media all and (max-width:650px)
+{
+	.container__header{
+		text-align: initial;
+	}
+
+	.container__header__menu:hover{
+		color: white;
+	}
+
+	.container__header__menu{
+		cursor :pointer;
+		display: block;
+		float: right;
+   		margin: 0.6em 1.5em 0em 0.4em;
+   		font-size: 44px;
+	}
+
+	.container__header__checkbox:checked+ .container__links{
+		display: block;
+	}
+	.container__header__image{
+		width: 4em;
+    	margin: 1.5em 3.5em;
+	}
+	.container__links{
+	display: none;
+    margin-top: 1.5em;
+    float: right;
+
+	}
+	.container__links__a{
+    	font-size: 0.9em;
+    	display: block;
+    	text-align: center;
+	}
+
+	.container__bottom{
+		display: inline-block;
+		margin-top: 3em;
+}
+	.container__left,
+	.container__center,
+	.container__right{
+		width: 100%;
+		padding: 0px 20px;
+	    box-sizing: border-box;
+	    text-align: center;
+}
+	.container__definition{
+   	 	margin-top: 2em;
+}
+	.container__definition__paragraph{
+   	 	font-size: 0.9em;
+}
+}
